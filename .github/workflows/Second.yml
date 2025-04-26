@@ -1,5 +1,5 @@
 name : Second_Action
-on : push
+on : workflow_dispatch
 jobs:
   firstjob:
     name: Second-Github-Actions
