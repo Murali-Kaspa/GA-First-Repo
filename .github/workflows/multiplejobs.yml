@@ -1,0 +1,27 @@
+name : MultipleOBS
+on : push
+jobs:
+  firstjob:
+    name: First-Job
+    runs-on: ubuntu-latest
+    steps:
+      - name : Greet
+        run : echo "Hello"
+      - name : done
+        run : echo "Sample DOne"
+      - name : Testing Shell
+        run: |
+            echo "First output"
+            echo "Second output"
+  secondjob:
+    name: Second-Job
+    runs-on: ubuntu-latest
+    steps:
+      - name : Greet
+        run : echo "Hello From Second Job Teasting"
+      - name : done
+        run : echo "Ths is a Second Job"
+      - name : Testing Shell
+        run: |
+            echo "First output"
+            echo "Second output"
