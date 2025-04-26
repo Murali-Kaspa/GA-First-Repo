@@ -1,12 +1,10 @@
 name : first Gituhub Action
 on : workflow_dispatch
 jobs:
-  runs-on : ubuntu-latest
-  steps:
-  - name : Greet
-    run : "HEllo"
-  - name : ODne
-    run : "Bye"
-
-
-
+  first-job:
+    runs-on : ubuntu-latest
+    steps:
+      - name : Greet
+        run : "HEllo"
+      - name : ODne
+        run : "Bye"
