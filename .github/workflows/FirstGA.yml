@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : Hello
-        run : "Hello Murali"
+        run : echo "Hello Murali"
       - name : Sample
-        run : "Sample Done" 
+        run : echo "Sample Done" 
