@@ -13,3 +13,5 @@ jobs:
         run: |
             echo "First output"
             echo "Second output"
+      - name: Outputs
+        run: echo "${{ toJSON(github) }}"
