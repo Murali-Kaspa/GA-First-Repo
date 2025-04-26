@@ -1,11 +1,11 @@
-name : Practise
+name : Ok
 on : workflow_dispatch
 jobs:
-  firstjob: 
-    name: my-first-job
-    runs-on: ubuntu-latest
-    steps:
-      - name : Hello
-        run : echo "Hello Murali"
-      - name : Sample
-        run : echo "Sample Done" 
+  firstjob:
+  name : First-Job
+  runs-on : ubuntu-latest
+  steps:
+    - name : Greet
+      run : echo "Hello"
+    - name : done
+      run : echo "Sample DOne"
