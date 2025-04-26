@@ -1,0 +1,14 @@
+name : Second_Action
+on : workflow_dispatch
+jobs:
+  jobname: Second-Github-Actions
+    runs-on : ubuntu-latest
+    steps:
+    - name : First Step
+      run : echo "Hello This is a Second Job"
+    - name : Second Step
+      run : echo "Hello This is a second Step"
+    - name : Multiple steps
+      run : |
+        echo "First STep"
+        echo "Second Step"
