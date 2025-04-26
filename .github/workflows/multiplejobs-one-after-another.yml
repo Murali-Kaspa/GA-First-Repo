@@ -1,13 +1,14 @@
 name: Multiple-Jobs-One-After-another
-on : push
+on: push
 jobs:
   Test:
     name: Testing
     runs-on: ubuntu-latest
     steps:
       - name : Testing Phase
-        run : echo "Hello This is a Testing Phase"
-        run : echo "Development Stage will be done only once this Testing Phase Success"
+        run : |
+         echo "Hello This is a Testing Phase"
+         echo "Development Stage will be done only once this Testing Phase Success"
   Dev:
     name: Devlopment
     runs-on: ubuntu-latest
