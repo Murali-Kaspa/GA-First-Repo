@@ -10,6 +10,7 @@ jobs:
          echo "Hello This is a Testing Phase"
          echo "Development Stage will be done only once this Testing Phase Success"
   Dev:
+    needs: Testing
     name: Devlopment
     runs-on: ubuntu-latest
     steps:
