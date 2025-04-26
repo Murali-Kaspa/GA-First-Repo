@@ -1,7 +1,8 @@
 name : Practise
-on : workflow-description
+on : workflow_dispatch
 jobs:
-  firstjob: my-first-job
+  firstjob: 
+    name: my-first-job
     runs-on: ubuntu-latest
     steps:
       - name : Hello
