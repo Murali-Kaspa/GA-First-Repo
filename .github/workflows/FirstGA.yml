@@ -1,12 +1,13 @@
-name : First WorkFlow
+name : First Github Action
 on : workflow_dispatch
 jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-    - name: Print Greeting
-      run: echo "Hello World"
-    - name: Exiting Greeting
-      run: echo "Hello World Bye"
+    - name : Greetings
+    run : echo "Hello Murali"
+    - name : Gathering-Details
+    run : read -p "Enter Your Name: " A
+    run : read -sp "Enter Your Password: " B
+    run : echo "The Name is ${A} and the password is ${B}"
     
-  
