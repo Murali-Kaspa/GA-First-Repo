@@ -1,10 +1,10 @@
-name : first Gituhub Action
-on : workflow_dispatch
+name : Github-Test
+on : workflow-dispatch
 jobs:
-  first-job:
-    runs-on : ubuntu-latest
+  first-job: Practise
+    runs on: ubuntu-latest
     steps:
-      - name : Greet
-        run : echo "HEllo"
-      - name : ODne
-        run : echo "Bye"
+      - name : Greeting
+        run : echo "Hello"
+      - name: Bad
+        run : echo "Coming"
