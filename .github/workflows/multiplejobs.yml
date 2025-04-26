@@ -1,26 +1,22 @@
-name : MultipleOBS
+name : MultipleJOBS
 on : push
 jobs:
   firstjob:
-    name: First-Job
+    name: Test
     runs-on: ubuntu-latest
     steps:
-      - name : Greet
-        run : echo "Hello"
+      - name : Testing
+        run : echo "Hello This is a Testing JOB"
       - name : done
-        run : echo "Sample DOne"
-      - name : Testing Shell
-        run: |
-            echo "First output"
-            echo "Second output"
+        run : echo "Sample Testing Success"
   secondjob:
-    name: Second-Job
+    name: Dev
     runs-on: ubuntu-latest
     steps:
-      - name : Greet
-        run : echo "Hello From Second Job Teasting"
-      - name : done
-        run : echo "Ths is a Second Job"
+      - name : Development
+        run : echo "Hello This is Dev Stage"
+      - name : Deploy-Done
+        run : echo "Deployment Success"
       - name : Testing Shell
         run: |
             echo "First output"
