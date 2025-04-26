@@ -13,3 +13,8 @@ jobs:
       run : |
         echo "First STep"
         echo "Second Step"
+  secondjob:
+    name: Second-job
+      steps:
+      - name: second-job
+        run : echo "Hello Man"
