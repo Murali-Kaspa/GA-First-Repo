@@ -1,0 +1,22 @@
+name: Events-Demo
+
+on:
+  pull_request:
+    types: [opened, pinned, closed]
+    branches:
+      - main
+      - 'dev-*'    # Matches dev-abc, dev-new, dev-feature
+      - 'dev/**'   # Matches dev/feature, dev/feature/one
+  push:
+    branches:
+      - main
+      - 'dev-*'
+      - 'dev/**'
+  workflow_dispatch:
+
+jobs:
+  demo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print event info
+        run: echo "This workflow was triggered by a pull request, push, or manual dispatch!"
