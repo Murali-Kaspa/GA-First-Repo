@@ -1,5 +1,5 @@
 name : Second_Action
-on : workflow_dispatch
+on : push
 jobs:
   firstjob:
     name: Second-Github-Actions
@@ -19,5 +19,6 @@ jobs:
     steps:
       - name: second-job
         run : echo "Hello Man"
-      - name: Testing Commments
-        run : echo "Testing for Git Comments will trigger or Not.."
+      #- name: Testing Commments
+      #  run : echo "Testing for Git Comments will trigger or Not.."
+      
