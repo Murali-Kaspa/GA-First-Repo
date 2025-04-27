@@ -15,4 +15,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : Development
-        run : echo "Congrats!.. Tesing Done, So Development is success"
+        run : echo "Congratss!.. Tesing Done, So Development is success"
