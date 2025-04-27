@@ -9,7 +9,6 @@ on:
       - 'dev/**'   # Matches dev/feature, dev/feature/one
   push:
     branches:
-      - main
       - 'dev-*'
       - 'dev/**'
   workflow_dispatch:
