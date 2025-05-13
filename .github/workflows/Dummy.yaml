@@ -1,0 +1,10 @@
+name: Hello This is Dummy
+on: workflow_dispatch
+jobs:
+  firstjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First-Step
+        run: echo "Hello World"
+      - name: Exit-Message
+        run: echo "This is Exiting"
