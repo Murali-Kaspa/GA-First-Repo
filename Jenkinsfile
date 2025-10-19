@@ -1,16 +1,16 @@
-@library ('my-shared-lib')
-pipeline{
-  agent any
-  stages{
-    stage('Welcome Page'){
-      steps{
-        echo "Hello World"
-      }
+@Library('my-shared-lib') _
+pipeline {
+    agent any
+    stages {
+        stage('Welcome Page') {
+            steps {
+                echo "Hello World"
+            }
+        }
+        stage('Library Test') {
+            steps {
+                sample()
+            }
+        }
     }
-    stage('Library Test'){
-      steps{
-        sample()
-      }
-    }
-  }
-}  
+}
