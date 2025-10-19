@@ -1,9 +1,9 @@
 pipeline{
   agent any
   stages{
-    stage('Welcome Page'){
+    stage('Welcome to Dev Page'){
       steps{
-        echo "Hello World"
+        echo "Hello Developer"
       }
     }
   }
